@@ -6,8 +6,9 @@
 }
 
 body {
-	display: flex; /*?*/
-	flex-flow: column nowrap; /*?*/
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
 	justify-content: center;
 	font-family: "IBM Plex Sans", sans-serif;
 	background: linear-gradient(135deg, #194261, #0C2233);
@@ -38,9 +39,7 @@ nav {
 	flex-flow: row nowrap;
 	position: absolute;
 	top: calc(21*100%/1000);
-	left: calc(41*100%/1920);
-	right: calc(41*100%/1920);
-	width: calc(1856*100%/1920);
+	width: 95%;
 	height: 77px;
 	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
 	border-radius: 10px;
@@ -93,13 +92,11 @@ nav {
 }
 
 main {
-	width: calc(1856*100%/1920);
+	width: 95%;
 	height: calc(790*100%/1000);
 	overflow: scroll;
 	position: absolute;
-	top: calc(171*100%/1000);
-	left: calc(41*100%/1920);
-	right: calc(41*100%/1920);
+	top: clamp(125px,calc(171*100%/1000),180px);
 	overflow-x: hidden;
 
 	&::-webkit-scrollbar {
