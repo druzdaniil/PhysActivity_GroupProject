@@ -55,13 +55,13 @@ body {
     align-items: center;
 }
 .wrapper h1{
-    font-size: 36px;
+    font-size: 20px;
     text-align: center;
     color: white
 }
 .wrapper .input-box {
     width: 100%;
-    height: 50px;
+    height: 60px;
     margin:6px 0;
 }
 
@@ -77,17 +77,18 @@ body {
 }
 
 .input-box input::placeholder{
-    color: white;
+    color: rgb(204, 204, 204);
 }
 
 .wrapper .remember {
     display: flex;
     justify-content: space-between;
-    font-size: 14.5px;
+    font-size: 16.5px;
+    margin-right: 10px;
     
 }
 .remember label input {
-    accent-color: white;
+    accent-color: rgb(204, 204, 204);
     margin-right: 3px;
 }
 
@@ -114,16 +115,16 @@ body {
 }
 
 .wrapper .register-link {
-    font-size: 14.5px;
+    font-size: 13.5px;
     text-align: center;
-    margin-top:20px;
+    margin-top:65px;
 }
 
 .register-link p a {
     color: #000033;
     text-decoration: none;
     font-weight: 600;
-
+    
 }
 
 .register-link p a:hover{
@@ -133,7 +134,7 @@ body {
 
 .buttonOUT {
     margin-top: 40px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     justify-content: center;
 }
@@ -148,5 +149,38 @@ body {
     cursor: pointer;
     font-weight: 600;
     display: inline-flex;
-
 }
+
+
+.buttons {
+    display: flex;
+
+    margin-top: 25px;
+}
+
+
+.logo-left, .logo-right {
+    position: absolute;
+    top: 50%;
+    width: 320px; 
+    height: auto;
+    transform: translateY(-50%); 
+    filter: blur(5px);
+}
+
+.logo-left {
+    left: 10%; 
+}
+
+.logo-right {
+    right: 10%;
+}
+
+.wrapper .buttonOUT:hover{
+    background-color: #2E34B0 ;
+}
+
+.wrapper .buttonIN:hover{
+    background-color: #2E34B0 ;
+}
+
