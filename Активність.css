@@ -11,7 +11,7 @@ nav{
     position: absolute;
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 60px;
     border-radius: 10px;
     margin-top: 3px;
 }
@@ -20,15 +20,23 @@ nav a{
     color: #FFFFFF;
     text-decoration: none;
     width: 100%;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 60px;
+    font-size: 23px;
+    margin-top: 15px;
+    margin-left: 105px;
 }
 
 .profil{
-    width: 40px;
-    height: 40px;
-    margin-top: 5px;
+    width: 43px;
+    height: 43px;
+    margin-top: 6px;
     margin-right: 10px;
     border-radius: 20px;
+}
+
+.logo{
+    background-color: #0A91AB;
+    width: 70px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 1px;
 }
