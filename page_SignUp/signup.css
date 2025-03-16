@@ -152,3 +152,30 @@ body {
     display: inline-flex;
 }
 
+
+.logo-left, .logo-right {
+    position: absolute;
+    top: 50%;
+    width: 320px; 
+    height: auto;
+    transform: translateY(-50%); 
+    filter: blur(5px);
+}
+
+
+.wrapper .buttonOUT:hover{
+    background-color: #2E34B0 ;
+}
+
+.wrapper .buttonIN:hover{
+    background-color: #2E34B0 ;
+}
+
+
+.logo-left {
+    left: 10%; 
+}
+
+.logo-right {
+    right: 10%;
+}
