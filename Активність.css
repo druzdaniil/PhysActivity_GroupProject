@@ -1,0 +1,14 @@
+body{
+    background-color: #0C2233;
+}
+
+nav{
+    background-color: #065471;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
