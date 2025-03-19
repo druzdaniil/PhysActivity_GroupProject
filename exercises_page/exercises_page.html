@@ -7,23 +7,38 @@
 	<title>Сторінка з відеовправами</title>
 </head>
 <body>
-	<nav>
-		<div class="logo-section">
-			<img src="src/logo.svg" alt="Логотип" id="logo">
+	<header>
+		<div class="container">
+			<div class="logo-section">
+				<img src="src/logo.svg" alt="Логотип" id="logo">
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li>
+						<a href="">Розклад</a>
+					</li>
+					<li>
+						<a href="">Активність</a>
+					</li>
+					<li>
+						<a href="">Статистика</a>
+					</li>
+					<li>
+						<a href="">Відеовправи</a>
+					</li>
+					<li>
+						<a href="">
+							<span id="profile-text">Профіль</span>
+							<img src="src/profile_example.png" id="profile-icon" alt="Профіль">
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="burger">
+				<span></span>
+			</div>
 		</div>
-		<div class="navigation-section">
-			<ul>
-				<li><a href="">Розклад</a></li>
-				<li><a href="">Активність</a></li>
-				<li><a href="">Статистика</a></li>
-				<li><a href="">Відеовправи</a></li>
-				<li><a href=""><img src="src/profile_example.png" alt="Профіль"><span id="profile-text">Профіль</span></a></li>
-			</ul>
-		</div>
-		<div class="burger">
-			<span></span>
-		</div>
-	</nav>
+	</header>
 	<main>
 		<div class="exercises">
 			<div class="exercise">
@@ -83,5 +98,6 @@
 		</div>
 	</main>
 	<!--<footer></footer>-->
+	<script src="exercises_page.js"></script>
 </body>
 </html>
