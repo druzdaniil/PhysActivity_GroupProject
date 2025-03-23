@@ -23,6 +23,7 @@ body {
 
 a {
 	text-decoration: none;
+	transition: color 0.2s;
 
 	&:visited {
 		color: #ffffff;

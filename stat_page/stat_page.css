@@ -213,9 +213,9 @@ main {
 
 .main-container {
 	width: calc(1820*100%/1920);
-	height: 100vh;
 	display: flex;
 	flex-flow: column nowrap;
+	gap: calc(20*100%/1000);
 }
 
 .table-container {
@@ -225,12 +225,18 @@ main {
 	border-radius: 10px;
 	display: flex;
 	justify-content: center;
+	transition: background-color 0.2s;
+
+	&:hover {
+		background-color: #097e95;
+		transition: background-color 0.2s;
+	}
 }
 
 table {
 	width: 97%;
 	height: 96%;
-	background-color: #065471;
+	background-color: transparent;
 	border-collapse: collapse;
 	align-self: center;
 	font-size: 1.7em;
@@ -253,9 +259,25 @@ table {
 	& tr:last-child td {
 		border-bottom: none;
 	}
-	
 }
 
+.charts {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	width: 100%;
+	height: 725px;
+}
+
+.chart {
+	height: 100%;
+	width: calc(725/200*80%);
+}
+
+canvas {
+	width: 100%;
+	height: 100%;
+}
 
 /* .exercises {
 	width: calc(1741*100%/1920);
@@ -347,7 +369,6 @@ table {
 		border-radius: 0;
 	}
 
-	
 	@keyframes burgerAnimation {
 		from {
 			opacity: 0;
