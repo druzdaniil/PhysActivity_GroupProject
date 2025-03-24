@@ -1,0 +1,164 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #0C2233;
+
+}
+
+
+.main_div {
+    position: fixed;
+    display: flex;
+    width: 275px;
+    height: 451px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    background: #000033;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.window { 
+    margin-top: 18px;
+    justify-content: center;
+    position: absolute;
+    width: 257px;
+    height: 419px;
+    background: #2E6B82;
+    border-radius: 20px;
+}
+
+.button_in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 92px;
+    height: 36px;
+    margin-left:15px;
+    margin-top: 350px;    
+    background-color: #151965;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button_up { 
+    display: flex;
+    position: relative;
+    width: 118px;
+    height: 36px;
+    margin-left:130px;
+    margin-top: 350px;    
+    background-color: #151965;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo { 
+    position: absolute;
+    justify-content: center;
+    margin-left:23%;
+    margin-top: 35%;
+    width: 150px;
+    height: 100px;
+    align-items: center;
+}
+.in {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 37px;
+    height: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.up {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 37px;
+    height: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-left: 5px;
+}
+
+.button_in:hover {
+    transition-property:background-color, border-radius;
+    background-color:#2E34B0 ;
+    transition-duration: 0.4s;
+    border-radius: 15px; 
+}
+.button_up:hover {
+    transition-property:background-color, border-radius;
+    background-color:#2E34B0 ;
+    transition-duration: 0.4s;
+    border-radius: 15px; 
+}
+
+.logo-left, .logo-right {
+    position: absolute;
+    top: 50%;
+    width: 320px; 
+    height: auto;
+    transform: translateY(-50%); 
+    filter: blur(5px);
+}
+
+.logo-left {
+    left: 10%; 
+}
+
+.logo-right {
+    right: 10%;
+}
+
+.buttonOUT {
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+}
+
+.buttonIN {
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.buttons .buttonIN {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background: #151965;
+    margin-left: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-flex;
+}
+
+.buttons .buttonOUT {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background: #151965;
+    margin-left: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-flex;
+    margin-top: 325px;
+}
