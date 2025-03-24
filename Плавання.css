@@ -50,32 +50,56 @@ h1{
 .time{
     background-color: #065471;
     border-radius: 15px;
-    width: 290px;
-    height: 180px;
+    width: 315px;
+    height: 200px;
     position: relative;
     top: 170px;
-    left: 160px;
-}
-
-.timer{
-    color: white;
-    
-}
-
-.today{
+    left: 180px;
     color: white;
 }
 
-.number{
-    color: white;
-}
 
 .calendar{
     background-color: #065471;
     border-radius: 15px;
-    width: 270px;
-    height: 230px;
+    width: 268px;
+    height: 270px;
     position: relative;
     top: 170px;
-    left: 160px;
+    left: 190px;
+    color: white;
+}
+
+
+.calories{
+    background-color: #065471;
+    border-radius: 15px;
+    width: 315px;
+    height: 200px;
+    position: relative;
+    left: 500px;
+    bottom: 150px;
+    color: white;
+}
+
+.distance{
+    background-color: #065471;
+    border-radius: 15px;
+    width: 315px;
+    height: 200px;
+    position: relative;
+    bottom: 250px;
+    left: 840px;
+    color: white;
+}
+
+.text_of_the_day{
+    background-color: #065471;
+    border-radius: 15px;
+    width: 320px;
+    height: 140px;
+    position: relative;
+    bottom: 630px;
+    left: 840px;
+    color: white;
 }
