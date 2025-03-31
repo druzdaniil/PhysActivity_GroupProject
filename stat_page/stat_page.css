@@ -19,6 +19,7 @@ body {
   	font-style: normal;
 	width: 100%;
 	min-height: 100vh;
+	color: #ffffff;
 }
 
 a {
@@ -266,14 +267,15 @@ table {
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
-	height: 725px;
+	height: auto;
 	margin-top: 20px;
-	gap: calc(100%/1920*20);
+	gap: calc(100%/1000*20);
 }
 
 .chart {
 	height: 100%;
 	width: calc(725/200*80%);
+	margin-bottom: 20px;
 }
 
 canvas {
@@ -284,40 +286,18 @@ canvas {
 	border-radius: 10px;
 }
 
-/* .exercises {
-	width: calc(1741*100%/1920);
-	height: calc(790*100%/1000);
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-auto-rows: 1fr;
-	gap: calc(70*100%/1000) calc(133*100%/1000);
+.stat-text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
 
-
-	& .exercise {
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-		
-		&:hover {
-			opacity: 0.8;
-			transition: opacity 0.2s;
-		}
-
-		& a img {
-			width: 100%;
-			object-fit: cover;
-			border-radius: 22px;
-		}
-
-		& a h2 {
-			overflow: hidden;
-			display: -webkit-box;
-			-webkit-line-clamp: 2;
-			-webkit-box-orient: vertical;
-			text-overflow: ellipsis;
-		}
+	h3 {
+		font-size: 1.8em;
 	}
-} */
+}
 
 @media (min-width: 715px) and (max-width: 900px) {
 	nav ul li {
@@ -392,17 +372,29 @@ canvas {
 	table {
 		font-size: 1.2em;
 	}
+
+	.stat-text-container h3 {
+		font-size: 1.4em;
+	}
 }
 
 @media (max-width: 530px) {
 	table {
 		font-size: 0.9em;
 	}
+
+	.stat-text-container h3 {
+		font-size: 1.1em;
+	}
 }
 
 @media (max-width: 325px) {
 	table {
 		font-size: 0.7em;
+	}
+
+	.stat-text-container h3 {
+		font-size: 0.9em;
 	}
 }
 
@@ -412,6 +404,6 @@ canvas {
 	}
 
 	.chart {
-		width: auto;
+		width: 100%;
 	}
 }
