@@ -1,11 +1,8 @@
 const timeSetter = document.querySelector('.time-setter');
 const countdown = document.querySelector('.countdown');
-const timeEnd = document.querySelector('.time-end');
-
 const btnStart = document.querySelector('.btn-start');
 
 countdown.style.display = 'none';
-timeEnd.style.display = 'none';
 timeSetter.style.display = 'flex';
 
 btnStart.addEventListener('click', () => {
@@ -21,7 +18,7 @@ btnStart.addEventListener('click', () => {
 
 	let countdownInterval = setInterval(() => {
 		let hours = Math.floor(time / 3600).toString().padStart(2, '0');
-		let mins = Math.floor((time - hours*3600) / 60).toString().padStart(2, '0');
+		let mins = Math.floor((time % 3600) / 60).toString().padStart(2, '0');
 		let secs = (time % 60).toString().padStart(2, '0');
 		countdown.innerHTML = `${hours}:${mins}:${secs}`;
 		time--;
@@ -30,4 +27,9 @@ btnStart.addEventListener('click', () => {
 			clearInterval(countdownInterval);
 		}
 	}, 1000);
+
+	setTimeout(() => {
+		location.replace('../stat_page/stat_page.html'); /*Треба буде змінити шлях до файлу, 
+		якщо у фінальному варіанті розташуування файлів між собою буде іншим*/
+	}, (secInput + minInput*60 + hourInput*3600)*1000 + 1000)
 });
