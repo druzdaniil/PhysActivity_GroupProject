@@ -139,35 +139,15 @@ body {
 
 @media (max-width: 426px) {
 	.time-setter > div {
-		display: flex;
 		flex-flow: column nowrap;
-		justify-content: space-between;
-		gap: 5vw;
-		width: 100%;
-		height: 35%;
 	}
 	
 	.input-section {
-		display: flex;
 		flex-flow: column nowrap;
-		align-items: center;
-		gap: 3px;
 	
 		> input {
 			width: 85px;
-			text-align: center;
-			padding-left: 15px;
 			height: 45px;
-			font-size: 2.7em;
-			border-radius: 8px;
-			border: 0px;
-			background-color: #065471;
-			color: #ffffff;
-	
-			&:hover {
-				background-color: #097e95;
-				transition: background-color 0.2s;
-			}
 		}
 	
 		small {
@@ -177,20 +157,7 @@ body {
 	
 	.btn-start {
 		width: 145px;
-		text-align: center;
 		height: 55px;
-		font-size: 1em;
-		border-radius: 8px;
-		border: 0px;
-		background-color: #034a64;
-		color: #ffffff;
-		font-weight: 600;
-		padding: 10px;
-	
-		&:hover {
-			background-color: #FFC045;
-			color: #097e95;
-			transition: background-color 0.2s;
-		}
+		font-size: 1.1em;
 	}
 }
