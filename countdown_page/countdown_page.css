@@ -23,7 +23,7 @@ body {
 }
 
 .time-setter {
-	display: flex;
+	display: none;
 	flex-flow: column nowrap;
 	align-items: center;
 	gap: 5vh;
@@ -85,6 +85,11 @@ body {
 	}
 }
 
+.countdown {
+	font-size: 200px;
+	font-weight: 600;
+}
+
 @media (max-width: 1950px) {
 	.input-section > input {
 		font-size: 7.5em;
@@ -120,6 +125,10 @@ body {
 
 	.btn-start {
 		font-size: 1.5em;
+	}
+
+	.countdown {
+		font-size: 150px;
 	}
 }
 
@@ -159,5 +168,9 @@ body {
 		width: 145px;
 		height: 55px;
 		font-size: 1.1em;
+	}
+
+	.countdown {
+		font-size: 70px;
 	}
 }
