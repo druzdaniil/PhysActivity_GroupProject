@@ -25,6 +25,10 @@ a {
 	text-decoration: none;
 	transition: color 0.2s;
 
+	&:link {
+		color: #ffffff;
+	}
+
 	&:visited {
 		color: #ffffff;
 	}
