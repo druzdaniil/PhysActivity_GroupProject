@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Активність (Йога)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d2b4a;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #105f82;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+            opacity: 0.6;
+        }
+        
+        .nav a.active {
+            opacity: 1;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .stars {
+            margin: 15px 0;
+        }
+        
+        .stars span {
+            font-size: 24px;
+            color: gold;
+        }
+        
+        .main-content {
+            background: #1a3d5d;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .box {
+            background: #2a4d6f;
+            padding: 15px;
+            margin: 10px auto;
+            border-radius: 8px;
+            width: 250px;
+        }
+        
+        .calendar-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .calendar-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            padding: 10px;
+            background: #1a3d5d;
+            border-radius: 10px;
+            width: 90%;
+            margin: auto;
+        }
+        
+        .day {
+            background: #2a4d6f;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .heart-rate {
+            background: #2a4d6f;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Йога лого">
+            <span>Йога+</span>
+        </div>
+        <div class="nav">
+            <a href="#">Розклад</a>
+            <a href="#" class="active">Активність</a>
+            <a href="#">Статистика</a>
+            <a href="#">Відеоуроки</a>
+        </div>
+        <div class="heart-rate">Серцебиття: 60 уд/хв</div>
+    </div>
+    <div class="container">
+        <h2>Йога</h2>
+        <div class="stars">★ ★ ★ ☆ ☆</div>
+        <div class="main-content">
+            <div class="box">Таймер: 00:00 h</div>
+            <div class="box">Калорії: 00,00 kkal</div>
+            <div class="box">"Насолода має приносити не тільки результат, а й сам процес"</div>
+            <div class="calendar-container">
+                <div class="calendar-title">Березень</div>
+                <div class="calendar">
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
