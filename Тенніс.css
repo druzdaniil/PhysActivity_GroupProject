@@ -245,3 +245,32 @@ h1{
     fill: #FFC045;
     stroke: #FFC045;
 }
+
+.heart{
+    position: absolute;
+    top: 100px;
+    left: 1230px;
+    color: white;
+}
+
+.heart_name{
+    font-size: 18px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.line6{
+    width: 110px;
+    border-bottom: 2px solid #A1D9EF;
+    position: absolute;
+    top: 60px;
+    left: 15.5px;
+}
+
+.heart_number{
+    font-size: 16px;
+    position: absolute;
+    top: 60px;
+    left: 43px;
+}
